@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ns3.simplify">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Homescreen"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Attendance"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Add_class"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden" />
+        <activity
+            android:name=".BluetoothScanActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.nononsenseapps.filepicker.FilePickerActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ClassDetailsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".MarkStudentsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".WifiLandingPage"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".NsdChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ContestUpload"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ViewHistoryOptions"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContestRules"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".DisplayQuestions"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="adjustPan" />
+        <activity
+            android:name=".ResultContestant"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".ContestantResultList"
+            android:screenOrientation="portrait" />
+
+        <service
+            android:name=".service.TimerBroadcastService"
+            android:screenOrientation="portrait" />
+
+        <activity android:name=".ContestHistoryList"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ParticipantHistoryList"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ContestParticipatedList"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>
